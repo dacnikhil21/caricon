@@ -1,7 +1,7 @@
 {
-  "version": 2,
   "cleanUrls": true,
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
