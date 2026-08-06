@@ -1,8 +1,8 @@
-/* Caircon Enterprises V2 — GSAP 3, Fluid Lenis Scroll & Motion Controller */
+/* Caircon Enterprises V2 — GSAP 3, Letter-by-Letter Animation & Motion Controller */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Initialize Fluid Lenis Scroll Engine (Zero Tightness / Effortless Touch)
+  // 1. Initialize Fluid Lenis Scroll Engine
   let lenis;
   if (typeof Lenis !== 'undefined') {
     lenis = new Lenis({
@@ -23,7 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(raf);
   }
 
-  // Register GSAP ScrollTrigger if available
+  // 2. Letter-by-Letter Typewriter Entrance Animation for Hero Title
+  const titleLines = document.querySelectorAll('.hero-main-title .title-line');
+  if (titleLines.length > 0 && typeof gsap !== 'undefined') {
+    titleLines.forEach(line => {
+      const rawText = line.textContent.trim();
+      line.innerHTML = rawText.split('').map(char => {
+        if (char === ' ') return '&nbsp;';
+        return `<span class="char">${char}</span>`;
+      }).join('');
+    });
+
+    gsap.from('.hero-main-title .char', {
+      opacity: 0,
+      y: 18,
+      stagger: 0.035,
+      duration: 0.45,
+      ease: 'power2.out',
+      delay: 0.3
+    });
+  }
+
+  // 3. Register GSAP ScrollTrigger
   if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -35,16 +56,15 @@ document.addEventListener('DOMContentLoaded', () => {
       gsap.ticker.lagSmoothing(0, 0);
     }
 
-    // 2. GSAP Hero Sequence Entrance Animation
+    // GSAP Subtitle & Buttons Reveal Timeline
     const heroTl = gsap.timeline({ defaults: { ease: 'power3.out', duration: 0.8 } });
     heroTl
-      .from('.hero-content-wrapper .editorial-section-label', { opacity: 0, y: -15, delay: 0.2 })
-      .from('.hero-main-title', { opacity: 0, y: 24, duration: 1 }, '-=0.4')
-      .from('.hero-sub-para', { opacity: 0, y: 18 }, '-=0.5')
+      .from('.hero-content-wrapper .editorial-section-label', { opacity: 0, y: -15, delay: 0.1 })
+      .from('.hero-sub-para', { opacity: 0, y: 18 }, '+=0.6')
       .from('.hero-btn-group', { opacity: 0, y: 15 }, '-=0.4')
       .from('.hero-trust-grid .trust-item', { opacity: 0, y: 12, stagger: 0.08 }, '-=0.3');
 
-    // 3. GSAP ScrollTrigger Process Timeline Fill Progress
+    // Process Timeline Scroll-Linked Fill Progress
     const timelineContainer = document.querySelector('.process-timeline');
     const progressBar = document.querySelector('.timeline-progress-bar');
     const timelineItems = document.querySelectorAll('.timeline-step-item');
@@ -167,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     } else {
       mobileNavSheet.classList.remove('active');
-      if (mobileHamburgerBtn) mobileHamburgerBtn.classList.remove('active');
+      if (mobileHamburgerBtn) mobileHamburgerBtn.remove('active');
       document.body.style.overflow = '';
     }
   }

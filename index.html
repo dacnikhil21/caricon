@@ -33,7 +33,7 @@
       <!-- Simplified Desktop Navigation Menu -->
       <ul class="nav-links-menu">
         <li><a href="#" class="nav-item-link">Home</a></li>
-        <li><a href="#services" class="nav-item-link">Services</a></li>
+        <li><a href="services.html" class="nav-item-link">Services</a></li>
         <li><a href="#about" class="nav-item-link">About Us</a></li>
         <li><a href="#contact" class="nav-item-link">Contact</a></li>
       </ul>
@@ -64,7 +64,7 @@
 
     <ul style="list-style: none; display: flex; flex-direction: column; gap: 24px; margin-top: 40px;">
       <li><a href="#" class="mobile-nav-link" style="color: #ffffff; text-decoration: none; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700;">Home</a></li>
-      <li><a href="#services" class="mobile-nav-link" style="color: #ffffff; text-decoration: none; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700;">Services</a></li>
+      <li><a href="services.html" class="mobile-nav-link" style="color: #ffffff; text-decoration: none; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700;">Services</a></li>
       <li><a href="#about" class="mobile-nav-link" style="color: #ffffff; text-decoration: none; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700;">About Us</a></li>
       <li><a href="#contact" class="mobile-nav-link" style="color: #ffffff; text-decoration: none; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700;">Contact Us</a></li>
     </ul>
@@ -95,10 +95,10 @@
           <span class="label-text">HVAC TESTING & COMMISSIONING</span>
         </div>
 
-        <h1 class="hero-main-title">
-          Precision.<br>
-          Performance.<br>
-          <span class="text-accent">Perfection.</span>
+        <h1 class="hero-main-title" id="hero-main-title">
+          <span class="title-line">Precision.</span><br>
+          <span class="title-line">Performance.</span><br>
+          <span class="text-accent title-line">Perfection.</span>
         </h1>
 
         <p class="hero-sub-para">
@@ -109,7 +109,7 @@
           <button class="btn-accent open-modal-btn">
             Request Inspection
           </button>
-          <a href="#services" class="btn-outline-white">
+          <a href="services.html" class="btn-outline-white">
             Explore Services
           </a>
         </div>
@@ -255,73 +255,91 @@
       <div class="services-grid-3">
         <!-- 1. Air Balancing (Ice Engineering Blue Card) -->
         <div class="service-item service-card-blue">
+          <div class="service-card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="HVAC Air Balancing CFM Testing" class="service-card-img">
+          </div>
           <div class="service-icon-box">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-airflow-path" d="M3 8h12a3 3 0 0 1 0 6H3m0-6a3 3 0 0 1 0-6h14"/><path class="icon-airflow-path" d="M3 16h16a3 3 0 0 1 0 6H3"/></svg>
           </div>
           <h3 style="color: #1e56a0; margin-bottom: 8px;">Air Balancing (TAB)</h3>
           <p class="subhead" style="font-size: 0.92rem; margin-bottom: 20px; color: #2c3e50;">Ensures optimal volumetric airflow (CFM) to every diffuser for peak thermal efficiency and occupant comfort.</p>
-          <a href="#contact" class="open-modal-btn" style="color: #1e56a0; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
-            Learn More <span style="transition: transform 0.2s ease;">→</span>
+          <a href="services.html" style="color: #1e56a0; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
+            Explore Division <span style="transition: transform 0.2s ease;">→</span>
           </a>
         </div>
 
-        <!-- 2. Duct Pressure Test (Warm Copper Amber Card - Rotating Gauge Needle) -->
+        <!-- 2. Duct Pressure Test (Warm Copper Amber Card) -->
         <div class="service-item service-card-copper">
+          <div class="service-card-image-wrap">
+            <img src="hero-hvac.png" alt="SMACNA Duct Pressure Test" class="service-card-img">
+          </div>
           <div class="service-icon-box">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><line class="icon-pressure-gauge-needle" x1="12" y1="12" x2="16" y2="8"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
           </div>
           <h3 style="color: #d96b27; margin-bottom: 8px;">Duct Pressure Test</h3>
           <p class="subhead" style="font-size: 0.92rem; margin-bottom: 20px; color: #3a2a1d;">Verifies structural duct strength and zero-leakage integrity as per SMACNA project specifications.</p>
-          <a href="#contact" class="open-modal-btn" style="color: #d96b27; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
-            Learn More <span style="transition: transform 0.2s ease;">→</span>
+          <a href="services.html" style="color: #d96b27; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
+            Explore Division <span style="transition: transform 0.2s ease;">→</span>
           </a>
         </div>
 
-        <!-- 3. Smoke Testing (Cool Slate Navy Card - Floating Smoke Plume) -->
+        <!-- 3. Smoke Testing (Cool Slate Navy Card) -->
         <div class="service-item service-card-slate">
+          <div class="service-card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80" alt="Cleanroom Smoke Containment Testing" class="service-card-img">
+          </div>
           <div class="service-icon-box">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-smoke-plume" d="M17.5 19.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5s2.5-5 2.5-5s2.5 3.6 2.5 5z"/><path class="icon-smoke-plume" d="M7 13.5c0 1.4-1.1 2.5-2.5 2.5S2 14.9 2 13.5s2.5-5 2.5-5s2.5 3.6 2.5 5z"/></svg>
           </div>
           <h3 style="color: #0b1e36; margin-bottom: 8px;">Smoke Testing</h3>
           <p class="subhead" style="font-size: 0.92rem; margin-bottom: 20px; color: #1c2a38;">Identifies micro-leaks, airflow containment patterns, and isolation ward pressure cascades using inert smoke.</p>
-          <a href="#contact" class="open-modal-btn" style="color: #0b1e36; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
-            Learn More <span style="transition: transform 0.2s ease;">→</span>
+          <a href="services.html" style="color: #0b1e36; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
+            Explore Division <span style="transition: transform 0.2s ease;">→</span>
           </a>
         </div>
 
-        <!-- 4. Water Balancing (Hydronic Aqua Cyan Card - Liquid Flow Wave) -->
+        <!-- 4. Water Balancing (Hydronic Aqua Cyan Card) -->
         <div class="service-item service-card-cyan">
+          <div class="service-card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Ultrasonic Chiller Water Balancing" class="service-card-img">
+          </div>
           <div class="service-icon-box">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-water-wave" d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/><path d="M7 15c2-1 4 1 6 0s4-1 4-1"/></svg>
           </div>
           <h3 style="color: #0891b2; margin-bottom: 8px;">Water Balancing (TAB)</h3>
           <p class="subhead" style="font-size: 0.92rem; margin-bottom: 20px; color: #164e63;">Ensures precise hydronic water flow (GPM) in HVAC chiller plants for maximum cooling energy efficiency.</p>
-          <a href="#contact" class="open-modal-btn" style="color: #0891b2; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
-            Learn More <span style="transition: transform 0.2s ease;">→</span>
+          <a href="services.html" style="color: #0891b2; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
+            Explore Division <span style="transition: transform 0.2s ease;">→</span>
           </a>
         </div>
 
-        <!-- 5. Light Testing (Optical Gold Amber Card - Scanning Laser Beam) -->
+        <!-- 5. Light Testing (Optical Gold Amber Card) -->
         <div class="service-item service-card-gold">
+          <div class="service-card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Optical Light Pass Duct Test" class="service-card-img">
+          </div>
           <div class="service-icon-box">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line class="icon-laser-beam" x1="12" y1="1" x2="12" y2="4"/><line class="icon-laser-beam" x1="12" y1="20" x2="12" y2="23"/><line class="icon-laser-beam" x1="1" y1="12" x2="4" y2="12"/><line class="icon-laser-beam" x1="20" y1="12" x2="23" y2="12"/></svg>
           </div>
           <h3 style="color: #d97706; margin-bottom: 8px;">Light Testing</h3>
           <p class="subhead" style="font-size: 0.92rem; margin-bottom: 20px; color: #451a03;">Detects visible joint gaps and microscopic seam leaks using high-intensity optical pass-through light arrays.</p>
-          <a href="#contact" class="open-modal-btn" style="color: #d97706; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
-            Learn More <span style="transition: transform 0.2s ease;">→</span>
+          <a href="services.html" style="color: #d97706; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
+            Explore Division <span style="transition: transform 0.2s ease;">→</span>
           </a>
         </div>
 
-        <!-- 6. Duct Painting (Emerald Shield Card - Sweeping Paint Roller) -->
+        <!-- 6. Duct Painting (Emerald Shield Card) -->
         <div class="service-item service-card-emerald">
+          <div class="service-card-image-wrap">
+            <img src="hero-hvac.png" alt="Acoustic Duct Painting Coating" class="service-card-img">
+          </div>
           <div class="service-icon-box">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-paint-roller" d="M12 19l7-7 3 3-7 7-3-3z"/><path class="icon-paint-roller" d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
           </div>
           <h3 style="color: #059669; margin-bottom: 8px;">Duct Painting & Coating</h3>
           <p class="subhead" style="font-size: 0.92rem; margin-bottom: 20px; color: #064e3b;">Protects exposed ductwork from corrosion, provides acoustic damping, and delivers premium architectural aesthetic finish.</p>
-          <a href="#contact" class="open-modal-btn" style="color: #059669; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
-            Learn More <span style="transition: transform 0.2s ease;">→</span>
+          <a href="services.html" style="color: #059669; font-weight: 700; text-decoration: none; font-family: var(--font-heading); font-size: 0.9rem; margin-top: auto; display: inline-flex; align-items: center; gap: 6px;">
+            Explore Division <span style="transition: transform 0.2s ease;">→</span>
           </a>
         </div>
       </div>
@@ -721,7 +739,7 @@
           <h5>Quick Links</h5>
           <ul class="footer-links">
             <li><a href="#" class="footer-link">Home</a></li>
-            <li><a href="#services" class="footer-link">Services</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
             <li><a href="#about" class="footer-link">About Us</a></li>
             <li><a href="#contact" class="footer-link">Contact Us</a></li>
           </ul>
@@ -730,12 +748,12 @@
         <div class="footer-col">
           <h5>Our Services</h5>
           <ul class="footer-links">
-            <li><a href="#services" class="footer-link">Air Balancing (TAB)</a></li>
-            <li><a href="#services" class="footer-link">Duct Pressure Test</a></li>
-            <li><a href="#services" class="footer-link">Smoke Testing</a></li>
-            <li><a href="#services" class="footer-link">Water Balancing (TAB)</a></li>
-            <li><a href="#services" class="footer-link">Light Testing</a></li>
-            <li><a href="#services" class="footer-link">Duct Painting</a></li>
+            <li><a href="services.html" class="footer-link">Air Balancing (TAB)</a></li>
+            <li><a href="services.html" class="footer-link">Duct Pressure Test</a></li>
+            <li><a href="services.html" class="footer-link">Smoke Testing</a></li>
+            <li><a href="services.html" class="footer-link">Water Balancing (TAB)</a></li>
+            <li><a href="services.html" class="footer-link">Light Testing</a></li>
+            <li><a href="services.html" class="footer-link">Duct Painting</a></li>
           </ul>
         </div>
 
