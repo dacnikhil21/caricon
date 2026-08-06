@@ -340,18 +340,18 @@ section[id] {
 /* Mobile Breakpoints (<768px) */
 @media (max-width: 768px) {
   .section-padding {
-    padding: 44px 0;
+    padding: 64px 0 !important;
   }
 
   .container {
-    padding: 0 16px;
+    padding: 0 18px;
   }
 
   .hero-100vh {
     height: auto;
     min-height: 100vh;
-    padding-top: 130px !important;
-    padding-bottom: 40px;
+    padding-top: 140px !important;
+    padding-bottom: 56px !important;
   }
 
   .hero-content-wrapper {

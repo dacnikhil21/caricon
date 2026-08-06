@@ -1548,8 +1548,9 @@
 
   .metrics-counter-row {
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 40px !important;
+    margin-bottom: 32px !important;
   }
 
   .counter-card {
