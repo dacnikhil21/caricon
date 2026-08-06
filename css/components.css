@@ -490,6 +490,18 @@
   color: #ffffff !important;
 }
 
+.services-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .services-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .ref-service-card {
   background: #ffffff;
   border-radius: 20px;
@@ -1169,7 +1181,7 @@
   box-shadow: 0 0 0 3px rgba(217, 107, 39, 0.12);
 }
 
-/* Mobile Extensions (<768px) */
+/* Mobile Extensions (<768px) - SINGLE CARD PER ROW (Full-Width Clean Mobile View) */
 @media (max-width: 768px) {
   .nav-links-menu {
     display: none;
@@ -1205,43 +1217,43 @@
 
   .services-grid-3 {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 20px;
   }
 
   .ref-card-img-wrap {
-    height: 140px;
+    height: 160px;
   }
 
   .ref-card-body {
-    padding: 26px 16px 16px;
+    padding: 30px 18px 18px;
   }
 
   .ref-card-title {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
   }
 
   .ref-card-desc {
-    font-size: 0.82rem;
-    margin-bottom: 12px;
+    font-size: 0.85rem;
+    margin-bottom: 14px;
   }
 
   .btn-whatsapp-solid, .btn-details-accent {
-    height: 40px;
-    font-size: 0.78rem;
-    border-radius: 10px;
+    height: 44px;
+    font-size: 0.82rem;
+    border-radius: 12px;
   }
 
   .instruments-grid-mobile {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .instrument-card {
-    padding: 14px 12px;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 12px;
+    padding: 16px 14px;
+    flex-direction: row;
+    gap: 14px;
+    border-radius: 14px;
   }
 
   .metrics-counter-row {
