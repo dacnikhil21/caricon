@@ -47,22 +47,21 @@
 }
 
 .splash-logo-img {
-  width: 90px;
-  height: 90px;
+  width: 92px;
+  height: 92px;
   object-fit: contain;
   border-radius: 50%;
   background: #ffffff;
   padding: 4px;
-  box-shadow: 0 0 40px rgba(217, 107, 39, 0.5), 0 0 80px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 40px rgba(217, 107, 39, 0.6), 0 0 80px rgba(59, 130, 246, 0.4);
   position: relative;
-  z-index: 2;
-  animation: splashLogoPop 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  z-index: 5;
+  animation: hvacFanSpin 1.8s linear infinite;
 }
 
-@keyframes splashLogoPop {
-  0% { transform: scale(0.4); opacity: 0; }
-  70% { transform: scale(1.08); }
-  100% { transform: scale(1); opacity: 1; }
+@keyframes hvacFanSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .splash-pulse-ring {
@@ -81,6 +80,36 @@
 @keyframes splashPulse {
   0% { width: 90px; height: 90px; opacity: 0.8; border-color: rgba(217, 107, 39, 0.8); }
   100% { width: 160px; height: 160px; opacity: 0; border-color: rgba(59, 130, 246, 0); }
+}
+
+/* Dynamic Wind Flow Outwards */
+.splash-airflow-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.airflow-wave {
+  fill: none;
+  stroke: rgba(59, 130, 246, 0.6);
+  stroke-width: 2.5;
+  stroke-dasharray: 14 10;
+  transform-origin: 100px 100px;
+  animation: windExpand 2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.wave-1 { animation-delay: 0s; stroke: rgba(217, 107, 39, 0.7); }
+.wave-2 { animation-delay: 0.6s; stroke: rgba(59, 130, 246, 0.7); }
+.wave-3 { animation-delay: 1.2s; stroke: rgba(14, 165, 233, 0.7); }
+
+@keyframes windExpand {
+  0% { r: 40px; opacity: 1; stroke-width: 3.5px; transform: rotate(0deg); }
+  100% { r: 110px; opacity: 0; stroke-width: 0.5px; transform: rotate(180deg); }
 }
 
 .splash-brand-title {
