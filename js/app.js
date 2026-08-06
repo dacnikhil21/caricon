@@ -2,17 +2,45 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 0. Awwwards 3-Second Premium Animated Splash Screen Controller
+  // 0. 1080p Video Animated Splash Screen Controller
   const splashScreen = document.getElementById('premium-splash-screen');
+  const splashVideo = document.getElementById('splash-video');
+
   if (splashScreen) {
     document.body.style.overflow = 'hidden';
-    setTimeout(() => {
+
+    let splashDismissed = false;
+    const dismissSplash = () => {
+      if (splashDismissed) return;
+      splashDismissed = true;
       splashScreen.classList.add('fade-out');
       document.body.style.overflow = '';
       setTimeout(() => {
         splashScreen.style.display = 'none';
       }, 700);
-    }, 2800);
+    };
+
+    // Allow user to tap/click splash container to skip instantly if desired
+    splashScreen.addEventListener('click', dismissSplash);
+
+    if (splashVideo) {
+      // Ensure video plays smoothly across desktop & mobile browsers
+      const playPromise = splashVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // If browser restricts video autoplay, fallback to timer
+          setTimeout(dismissSplash, 2500);
+        });
+      }
+
+      // Automatically dismiss when video finishes
+      splashVideo.addEventListener('ended', dismissSplash);
+
+      // Max safety timeout in case video ends early/late or is interrupted
+      setTimeout(dismissSplash, 5000);
+    } else {
+      setTimeout(dismissSplash, 2800);
+    }
   }
 
   // 1. Initialize Fluid Lenis Scroll Engine
