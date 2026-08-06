@@ -576,8 +576,19 @@
 .ref-card-img-wrap {
   position: relative;
   width: 100%;
-  height: 160px;
+  height: 200px;
   overflow: hidden;
+}
+
+.ref-card-img-scrim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(11, 30, 54, 0.55) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .ref-card-img {
@@ -594,18 +605,18 @@
 /* Top-Right Status Pill Badge */
 .card-status-pill {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 14px;
+  right: 14px;
   border-radius: 999px;
-  padding: 4px 10px;
+  padding: 5px 12px;
   font-family: var(--font-heading);
-  font-size: 0.65rem;
+  font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  z-index: 2;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  z-index: 3;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .pill-blue { background: #3b82f6; }
@@ -615,21 +626,21 @@
 .pill-gold { background: #d97706; }
 .pill-steel { background: #475569; }
 
-/* Overlapping Floating Circle Icon */
+/* Integrated Floating Circle Icon Badge inside Image Scrim */
 .floating-circle-icon {
   position: absolute;
-  left: 20px;
-  bottom: -22px;
-  width: 46px;
-  height: 46px;
+  left: 16px;
+  bottom: 14px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  border: 3px solid #ffffff;
+  border: 2.5px solid #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   z-index: 5;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   transition: transform 350ms cubic-bezier(.22,1,.36,1);
 }
 
@@ -646,7 +657,7 @@
 
 /* Card Body Content */
 .ref-card-body {
-  padding: 32px 20px 20px;
+  padding: 22px 20px 20px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -656,7 +667,7 @@
 .ref-card-title {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.28rem;
   line-height: 1.25;
   color: var(--color-primary);
   margin-bottom: 8px;
@@ -668,7 +679,7 @@
   font-size: 0.88rem;
   line-height: 1.48;
   color: var(--text-secondary);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -681,7 +692,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .chip-tag {
@@ -715,7 +726,7 @@
 
 .btn-whatsapp-solid {
   flex: 1;
-  height: 44px;
+  height: 46px;
   border-radius: 12px;
   background: #25D366;
   border: none;
@@ -740,7 +751,7 @@
 
 .btn-details-accent {
   flex: 1;
-  height: 44px;
+  height: 46px;
   border-radius: 12px;
   background: #ffffff;
   border: 1.5px solid currentColor;
@@ -1313,31 +1324,31 @@
 
   .services-grid-3 {
     grid-template-columns: 1fr !important;
-    gap: 20px !important;
+    gap: 22px !important;
     width: 100% !important;
   }
 
   .ref-card-img-wrap {
-    height: 160px;
+    height: 190px !important;
   }
 
   .ref-card-body {
-    padding: 30px 18px 18px;
+    padding: 22px 18px 18px !important;
   }
 
   .ref-card-title {
-    font-size: 1.2rem;
+    font-size: 1.25rem !important;
   }
 
   .ref-card-desc {
-    font-size: 0.85rem;
-    margin-bottom: 14px;
+    font-size: 0.88rem !important;
+    margin-bottom: 14px !important;
   }
 
   .btn-whatsapp-solid, .btn-details-accent {
-    height: 44px;
-    font-size: 0.82rem;
-    border-radius: 12px;
+    height: 46px !important;
+    font-size: 0.85rem !important;
+    border-radius: 12px !important;
   }
 
   .instruments-grid-mobile {
