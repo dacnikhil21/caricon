@@ -4,6 +4,6 @@
   "description": "Caircon Enterprises Commercial HVAC Testing & Commissioning",
   "private": true,
   "scripts": {
-    "build": "echo 'Static build complete'"
+    "build": "node -e \"const fs=require('fs'); fs.mkdirSync('public', {recursive: true}); fs.readdirSync('.').forEach(f => { if(f !== 'public' && f !== 'node_modules' && f !== '.git') fs.cpSync(f, 'public/' + f, {recursive: true}); });\""
   }
 }
