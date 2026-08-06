@@ -2,6 +2,19 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // 0. Awwwards 3-Second Premium Animated Splash Screen Controller
+  const splashScreen = document.getElementById('premium-splash-screen');
+  if (splashScreen) {
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      splashScreen.classList.add('fade-out');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        splashScreen.style.display = 'none';
+      }, 700);
+    }, 2800);
+  }
+
   // 1. Initialize Fluid Lenis Scroll Engine
   let lenis;
   if (typeof Lenis !== 'undefined') {
