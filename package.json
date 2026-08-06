@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Caircon Enterprises Commercial HVAC Testing & Commissioning",
   "private": true,
+  "main": "index.html",
   "scripts": {
-    "build": "node -e \"const fs=require('fs'); fs.mkdirSync('public', {recursive: true}); fs.readdirSync('.').forEach(f => { if(f !== 'public' && f !== 'node_modules' && f !== '.git') fs.cpSync(f, 'public/' + f, {recursive: true}); });\""
+    "build": "node -e \"const fs=require('fs'); fs.mkdirSync('public', {recursive: true}); fs.readdirSync('.').forEach(f => { if(f !== 'public' && f !== 'node_modules' && f !== '.git') fs.cpSync(f, 'public/' + f, {recursive: true}); });\"",
+    "vercel-build": "node -e \"const fs=require('fs'); fs.mkdirSync('public', {recursive: true}); fs.readdirSync('.').forEach(f => { if(f !== 'public' && f !== 'node_modules' && f !== '.git') fs.cpSync(f, 'public/' + f, {recursive: true}); });\""
   }
 }
