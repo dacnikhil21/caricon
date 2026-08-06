@@ -1,0 +1,105 @@
+/* Caircon V2 - Precision Typography System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background-color: var(--bg-canvas);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+.subhead {
+  color: var(--text-secondary);
+  font-size: clamp(1rem, 1.25vw, 1.18rem);
+  line-height: 1.8;
+}
+
+.hero-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  background: rgba(217, 107, 39, 0.15);
+  border: 1px solid rgba(217, 107, 39, 0.35);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-badge-tag::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  box-shadow: 0 0 10px var(--color-accent);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-blue {
+  color: var(--color-secondary);
+}
+
+.editorial-quote {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  line-height: 1.35;
+  color: var(--color-primary);
+  border-left: 4px solid var(--color-accent);
+  padding-left: 24px;
+  margin: 24px 0;
+}
+
+/* Dedicated Mobile Typography Scale (<768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.3rem;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .subhead {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+}

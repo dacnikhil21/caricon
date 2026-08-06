@@ -1,0 +1,49 @@
+/* Caircon Enterprises V2 - Official Master Mobile & Desktop Tokens */
+
+:root {
+  /* Brand Palette */
+  --color-primary: #0b1e36;         /* Deep Navy */
+  --color-primary-dark: #071324;    /* Dark Obsidian Navy */
+  --color-secondary: #1e56a0;       /* Engineering Blue */
+  --color-secondary-light: #eef4ff;
+  --color-accent: #d96b27;          /* Copper Orange */
+  --color-accent-hover: #b85419;
+  --color-accent-light: #fff6f0;
+
+  /* Surfaces & Canvas */
+  --bg-canvas: #ffffff;            /* Pure White Base */
+  --bg-surface: #f8fafc;           /* Slate Light Grey Band */
+  --bg-navy-band: #0b1e36;         /* Deep Navy Section Surface */
+  --bg-orange-band: #d96b27;       /* Copper Orange Section Surface */
+  --bg-card: #ffffff;
+  
+  /* Text Colors */
+  --text-primary: #0f172a;         /* Dark Charcoal */
+  --text-secondary: #475569;       /* Slate Gray Body */
+  --text-muted: #64748b;
+  --text-on-dark: #ffffff;
+
+  /* Borders & Dividers */
+  --border-light: #e2e8f0;         /* 1px Hairline Border */
+  --border-medium: #cbd5e1;
+
+  /* Shadows */
+  --shadow-subtle: 0 2px 8px rgba(11, 30, 54, 0.04);
+  --shadow-card: 0 4px 20px -2px rgba(11, 30, 54, 0.06);
+  --shadow-hover: 0 14px 36px -4px rgba(11, 30, 54, 0.14);
+  --shadow-dock: 0 -4px 20px rgba(11, 30, 54, 0.12);
+
+  /* Fonts */
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Layout Constants */
+  --container-max: 1320px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
