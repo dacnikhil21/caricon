@@ -107,7 +107,7 @@
   <!-- SCENE 02: Reference UI Cards on Dark Slate Surface -->
   <section class="section-padding bg-dark-slate">
     <div class="container">
-      <div style="text-align: center; max-width: 780px; margin: 0 auto 40px;">
+      <div style="text-align: center; max-width: 780px; margin: 0 auto 48px;">
         <div style="color: var(--color-accent); font-family: var(--font-heading); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 8px;">
           —— FULL CAPABILITY SPECTRUM ——
         </div>
@@ -120,192 +120,537 @@
         </p>
       </div>
 
+      <!-- 6 Obsidian Reference Service Cards Grid -->
       <div class="services-grid-3">
-        <!-- 1. Air Balancing (TAB) -->
-        <div class="ref-service-card glow-card-blue">
-          <div class="ref-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="HVAC Air Balancing Engineer Testing CFM" class="ref-card-img">
-            <div class="ref-card-img-scrim"></div>
-            <span class="card-status-pill pill-blue">MOST REQUESTED</span>
-            <div class="floating-circle-icon circle-blue">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-airflow-path" d="M3 8h12a3 3 0 0 1 0 6H3m0-6a3 3 0 0 1 0-6h14"/><path class="icon-airflow-path" d="M3 16h16a3 3 0 0 1 0 6H3"/></svg>
-            </div>
-          </div>
-          <div class="ref-card-body">
-            <h3 class="ref-card-title">Air Balancing (TAB)</h3>
-            <p class="ref-card-desc">Ensures optimal volumetric airflow (CFM) to every diffuser for peak thermal efficiency and comfort.</p>
+
+        <!-- 1. Air Balancing (TAB) - Blue Theme -->
+        <div class="obsidian-card glow-obsidian-blue">
+          <div class="obsidian-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="HVAC Air Balancing Engineer Testing CFM" class="obsidian-card-img">
+            <div class="obsidian-img-scrim"></div>
             
-            <div class="feature-chip-row">
-              <span class="chip-tag chip-tag-blue">✔ SMACNA</span>
-              <span class="chip-tag chip-tag-blue">✔ Commercial</span>
-              <span class="chip-tag chip-tag-blue">✔ Certified</span>
+            <div class="obsidian-status-pill pill-blue">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              MOST REQUESTED
             </div>
 
-            <div class="ref-card-action-row">
-              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Air%20Balancing%20(TAB)%20services." target="_blank" class="btn-whatsapp-solid">
-                💬 WhatsApp
+            <button class="obsidian-bookmark-btn" aria-label="Bookmark Service">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+
+            <div class="obsidian-circle-badge badge-blue">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-airflow-path" d="M3 8h12a3 3 0 0 1 0 6H3m0-6a3 3 0 0 1 0-6h14"/><path class="icon-airflow-path" d="M3 16h16a3 3 0 0 1 0 6H3"/></svg>
+            </div>
+          </div>
+
+          <div class="obsidian-card-body">
+            <div class="obsidian-title-row">
+              <div>
+                <h3 class="obsidian-card-title">Air Balancing (TAB)</h3>
+                <div class="obsidian-title-bar bar-blue"></div>
+              </div>
+              <div class="obsidian-trust-badge">
+                <div class="obsidian-trust-icon">✓</div>
+                <div class="obsidian-trust-text">
+                  <span>Trusted</span>
+                  <span>Since 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="obsidian-card-desc">
+              Ensures optimal volumetric airflow (CFM) to every diffuser for peak thermal efficiency and comfort.
+            </p>
+
+            <div class="obsidian-feature-row">
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-blue">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">SMACNA</span>
+                  <span class="sub">Certified</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-blue">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Volumetric</span>
+                  <span class="sub">Airflow</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-blue">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Certified</span>
+                  <span class="sub">Engineers</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="obsidian-action-row">
+              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Air%20Balancing%20(TAB)%20services." target="_blank" class="btn-obsidian-whatsapp">
+                <div class="btn-left-content">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  <div class="btn-text-stack">
+                    <span class="top-label">WhatsApp</span>
+                    <span class="sub-label">Quick Enquiry</span>
+                  </div>
+                </div>
+                <div class="btn-arrow-circle">→</div>
               </a>
-              <button class="btn-details-accent btn-details-accent-blue open-modal-btn">
-                Proposal <span class="arrow-icon">→</span>
+
+              <button class="btn-obsidian-details border-blue open-modal-btn">
+                <div class="btn-text-stack">
+                  <span class="top-label">Proposal</span>
+                  <span class="sub-label">Request Audit</span>
+                </div>
+                <div class="btn-arrow-circle" style="background: rgba(59, 130, 246, 0.3);">→</div>
               </button>
             </div>
           </div>
         </div>
 
-        <!-- 2. Duct Pressure Test -->
-        <div class="ref-service-card glow-card-orange">
-          <div class="ref-card-img-wrap">
-            <img src="hero-hvac.png" alt="SMACNA Duct Pressure Testing" class="ref-card-img">
-            <div class="ref-card-img-scrim"></div>
-            <span class="card-status-pill pill-orange">ESSENTIAL</span>
-            <div class="floating-circle-icon circle-orange">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><line class="icon-pressure-gauge-needle" x1="12" y1="12" x2="16" y2="8"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
-            </div>
-          </div>
-          <div class="ref-card-body">
-            <h3 class="ref-card-title">Duct Pressure Test</h3>
-            <p class="ref-card-desc">Verifies structural duct strength and zero-leakage integrity as per SMACNA project specifications.</p>
+        <!-- 2. Duct Pressure Test - Orange Theme -->
+        <div class="obsidian-card glow-obsidian-orange">
+          <div class="obsidian-card-img-wrap">
+            <img src="hero-hvac.png" alt="SMACNA Duct Pressure Testing" class="obsidian-card-img">
+            <div class="obsidian-img-scrim"></div>
             
-            <div class="feature-chip-row">
-              <span class="chip-tag chip-tag-orange">✔ SMACNA</span>
-              <span class="chip-tag chip-tag-orange">✔ Leakage Test</span>
-              <span class="chip-tag chip-tag-orange">✔ Certified</span>
+            <div class="obsidian-status-pill pill-orange">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              ESSENTIAL
             </div>
 
-            <div class="ref-card-action-row">
-              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20SMACNA%20Duct%20Pressure%20Testing." target="_blank" class="btn-whatsapp-solid">
-                💬 WhatsApp
+            <button class="obsidian-bookmark-btn" aria-label="Bookmark Service">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+
+            <div class="obsidian-circle-badge badge-orange">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><line class="icon-pressure-gauge-needle" x1="12" y1="12" x2="16" y2="8"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+            </div>
+          </div>
+
+          <div class="obsidian-card-body">
+            <div class="obsidian-title-row">
+              <div>
+                <h3 class="obsidian-card-title">Duct Pressure Test</h3>
+                <div class="obsidian-title-bar bar-orange"></div>
+              </div>
+              <div class="obsidian-trust-badge">
+                <div class="obsidian-trust-icon">✓</div>
+                <div class="obsidian-trust-text">
+                  <span>Trusted</span>
+                  <span>Since 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="obsidian-card-desc">
+              Verifies structural duct strength and zero-leakage integrity as per SMACNA project specifications.
+            </p>
+
+            <div class="obsidian-feature-row">
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-orange">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">SMACNA</span>
+                  <span class="sub">Standard</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-orange">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Zero Leakage</span>
+                  <span class="sub">CFM</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-orange">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Calibrated</span>
+                  <span class="sub">Rigs</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="obsidian-action-row">
+              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20SMACNA%20Duct%20Pressure%20Testing." target="_blank" class="btn-obsidian-whatsapp">
+                <div class="btn-left-content">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  <div class="btn-text-stack">
+                    <span class="top-label">WhatsApp</span>
+                    <span class="sub-label">Quick Enquiry</span>
+                  </div>
+                </div>
+                <div class="btn-arrow-circle">→</div>
               </a>
-              <button class="btn-details-accent btn-details-accent-orange open-modal-btn">
-                Proposal <span class="arrow-icon">→</span>
+
+              <button class="btn-obsidian-details border-orange open-modal-btn">
+                <div class="btn-text-stack">
+                  <span class="top-label">Proposal</span>
+                  <span class="sub-label">Request Audit</span>
+                </div>
+                <div class="btn-arrow-circle" style="background: rgba(217, 107, 39, 0.3);">→</div>
               </button>
             </div>
           </div>
         </div>
 
-        <!-- 3. Smoke Testing -->
-        <div class="ref-service-card glow-card-teal">
-          <div class="ref-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Cleanroom Smoke Pattern Testing" class="ref-card-img">
-            <div class="ref-card-img-scrim"></div>
-            <span class="card-status-pill pill-teal">POPULAR</span>
-            <div class="floating-circle-icon circle-teal">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-smoke-plume" d="M17.5 19.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5s2.5-5 2.5-5s2.5 3.6 2.5 5z"/><path class="icon-smoke-plume" d="M7 13.5c0 1.4-1.1 2.5-2.5 2.5S2 14.9 2 13.5s2.5-5 2.5-5s2.5 3.6 2.5 5z"/></svg>
-            </div>
-          </div>
-          <div class="ref-card-body">
-            <h3 class="ref-card-title">Smoke Testing</h3>
-            <p class="ref-card-desc">Detects duct leakage and gaps using visible smoke to ensure airtight HVAC performance.</p>
+        <!-- 3. Smoke Testing - Teal Theme -->
+        <div class="obsidian-card glow-obsidian-teal">
+          <div class="obsidian-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Cleanroom Smoke Pattern Testing" class="obsidian-card-img">
+            <div class="obsidian-img-scrim"></div>
             
-            <div class="feature-chip-row">
-              <span class="chip-tag chip-tag-teal">✔ Leak Detection</span>
-              <span class="chip-tag chip-tag-teal">✔ SMACNA</span>
-              <span class="chip-tag chip-tag-teal">✔ Certified</span>
+            <div class="obsidian-status-pill pill-teal">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              POPULAR
             </div>
 
-            <div class="ref-card-action-row">
-              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Smoke%20Testing%20services." target="_blank" class="btn-whatsapp-solid">
-                💬 WhatsApp
+            <button class="obsidian-bookmark-btn" aria-label="Bookmark Service">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+
+            <div class="obsidian-circle-badge badge-teal">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-smoke-plume" d="M17.5 19.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5s2.5-5 2.5-5s2.5 3.6 2.5 5z"/><path class="icon-smoke-plume" d="M7 13.5c0 1.4-1.1 2.5-2.5 2.5S2 14.9 2 13.5s2.5-5 2.5-5s2.5 3.6 2.5 5z"/></svg>
+            </div>
+          </div>
+
+          <div class="obsidian-card-body">
+            <div class="obsidian-title-row">
+              <div>
+                <h3 class="obsidian-card-title">Smoke Testing</h3>
+                <div class="obsidian-title-bar bar-teal"></div>
+              </div>
+              <div class="obsidian-trust-badge">
+                <div class="obsidian-trust-icon">✓</div>
+                <div class="obsidian-trust-text">
+                  <span>Trusted</span>
+                  <span>Since 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="obsidian-card-desc">
+              Detects duct leakage and gaps using visible smoke to ensure airtight HVAC performance.
+            </p>
+
+            <div class="obsidian-feature-row">
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-teal">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Visual</span>
+                  <span class="sub">Diagnostic</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-teal">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Non-Toxic</span>
+                  <span class="sub">Dense</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-teal">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Rapid Audit</span>
+                  <span class="sub">Reports</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="obsidian-action-row">
+              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Smoke%20Testing%20services." target="_blank" class="btn-obsidian-whatsapp">
+                <div class="btn-left-content">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  <div class="btn-text-stack">
+                    <span class="top-label">WhatsApp</span>
+                    <span class="sub-label">Quick Enquiry</span>
+                  </div>
+                </div>
+                <div class="btn-arrow-circle">→</div>
               </a>
-              <button class="btn-details-accent btn-details-accent-teal open-modal-btn">
-                Proposal <span class="arrow-icon">→</span>
+
+              <button class="btn-obsidian-details border-teal open-modal-btn">
+                <div class="btn-text-stack">
+                  <span class="top-label">Proposal</span>
+                  <span class="sub-label">Request Audit</span>
+                </div>
+                <div class="btn-arrow-circle" style="background: rgba(20, 184, 166, 0.3);">→</div>
               </button>
             </div>
           </div>
         </div>
 
-        <!-- 4. Water Balancing -->
-        <div class="ref-service-card glow-card-purple">
-          <div class="ref-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Ultrasonic Chiller Water Balancing" class="ref-card-img">
-            <div class="ref-card-img-scrim"></div>
-            <span class="card-status-pill pill-purple">HIGH IMPACT</span>
-            <div class="floating-circle-icon circle-purple">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-water-wave" d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/><path d="M7 15c2-1 4 1 6 0s4-1 4-1"/></svg>
-            </div>
-          </div>
-          <div class="ref-card-body">
-            <h3 class="ref-card-title">Water Balancing</h3>
-            <p class="ref-card-desc">Balances hydronic systems to ensure optimal flow, energy efficiency, and consistent thermal performance.</p>
+        <!-- 4. Water Balancing - Purple Theme -->
+        <div class="obsidian-card glow-obsidian-purple">
+          <div class="obsidian-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Ultrasonic Chiller Water Balancing" class="obsidian-card-img">
+            <div class="obsidian-img-scrim"></div>
             
-            <div class="feature-chip-row">
-              <span class="chip-tag chip-tag-purple">✔ Hydronic</span>
-              <span class="chip-tag chip-tag-purple">✔ ASHRAE</span>
-              <span class="chip-tag chip-tag-purple">✔ Certified</span>
+            <div class="obsidian-status-pill pill-purple">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              HIGH IMPACT
             </div>
 
-            <div class="ref-card-action-row">
-              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Water%20Balancing%20(TAB)%20services." target="_blank" class="btn-whatsapp-solid">
-                💬 WhatsApp
+            <button class="obsidian-bookmark-btn" aria-label="Bookmark Service">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+
+            <div class="obsidian-circle-badge badge-purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-water-wave" d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/><path d="M7 15c2-1 4 1 6 0s4-1 4-1"/></svg>
+            </div>
+          </div>
+
+          <div class="obsidian-card-body">
+            <div class="obsidian-title-row">
+              <div>
+                <h3 class="obsidian-card-title">Water Balancing</h3>
+                <div class="obsidian-title-bar bar-purple"></div>
+              </div>
+              <div class="obsidian-trust-badge">
+                <div class="obsidian-trust-icon">✓</div>
+                <div class="obsidian-trust-text">
+                  <span>Trusted</span>
+                  <span>Since 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="obsidian-card-desc">
+              Balances hydronic systems to ensure optimal flow, energy efficiency, and consistent thermal performance.
+            </p>
+
+            <div class="obsidian-feature-row">
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-purple">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Hydronic</span>
+                  <span class="sub">Systems</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-purple">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">ASHRAE</span>
+                  <span class="sub">Compliant</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-purple">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Certified</span>
+                  <span class="sub">Engineers</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="obsidian-action-row">
+              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Water%20Balancing%20(TAB)%20services." target="_blank" class="btn-obsidian-whatsapp">
+                <div class="btn-left-content">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  <div class="btn-text-stack">
+                    <span class="top-label">WhatsApp</span>
+                    <span class="sub-label">Quick Enquiry</span>
+                  </div>
+                </div>
+                <div class="btn-arrow-circle">→</div>
               </a>
-              <button class="btn-details-accent btn-details-accent-purple open-modal-btn">
-                Proposal <span class="arrow-icon">→</span>
+
+              <button class="btn-obsidian-details border-purple open-modal-btn">
+                <div class="btn-text-stack">
+                  <span class="top-label">Proposal</span>
+                  <span class="sub-label">Request Audit</span>
+                </div>
+                <div class="btn-arrow-circle" style="background: rgba(168, 85, 247, 0.3);">→</div>
               </button>
             </div>
           </div>
         </div>
 
-        <!-- 5. Light Testing -->
-        <div class="ref-service-card glow-card-gold">
-          <div class="ref-card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Optical Light Pass Duct Test" class="ref-card-img">
-            <div class="ref-card-img-scrim"></div>
-            <span class="card-status-pill pill-gold">QUALITY CHECK</span>
-            <div class="floating-circle-icon circle-gold">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line class="icon-laser-beam" x1="12" y1="1" x2="12" y2="4"/><line class="icon-laser-beam" x1="12" y1="20" x2="12" y2="23"/><line class="icon-laser-beam" x1="1" y1="12" x2="4" y2="12"/><line class="icon-laser-beam" x1="20" y1="12" x2="23" y2="12"/></svg>
-            </div>
-          </div>
-          <div class="ref-card-body">
-            <h3 class="ref-card-title">Light Testing</h3>
-            <p class="ref-card-desc">Verifies duct tightness by detecting light penetration through ducts under negative pressure conditions.</p>
+        <!-- 5. Light Testing - Gold Theme -->
+        <div class="obsidian-card glow-obsidian-gold">
+          <div class="obsidian-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Optical Light Pass Duct Test" class="obsidian-card-img">
+            <div class="obsidian-img-scrim"></div>
             
-            <div class="feature-chip-row">
-              <span class="chip-tag chip-tag-gold">✔ SMACNA</span>
-              <span class="chip-tag chip-tag-gold">✔ Quality Test</span>
-              <span class="chip-tag chip-tag-gold">✔ Certified</span>
+            <div class="obsidian-status-pill pill-gold">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              QUALITY CHECK
             </div>
 
-            <div class="ref-card-action-row">
-              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Light%20Testing%20services." target="_blank" class="btn-whatsapp-solid">
-                💬 WhatsApp
+            <button class="obsidian-bookmark-btn" aria-label="Bookmark Service">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+
+            <div class="obsidian-circle-badge badge-gold">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line class="icon-laser-beam" x1="12" y1="1" x2="12" y2="4"/><line class="icon-laser-beam" x1="12" y1="20" x2="12" y2="23"/><line class="icon-laser-beam" x1="1" y1="12" x2="4" y2="12"/><line class="icon-laser-beam" x1="20" y1="12" x2="23" y2="12"/></svg>
+            </div>
+          </div>
+
+          <div class="obsidian-card-body">
+            <div class="obsidian-title-row">
+              <div>
+                <h3 class="obsidian-card-title">Light Testing</h3>
+                <div class="obsidian-title-bar bar-gold"></div>
+              </div>
+              <div class="obsidian-trust-badge">
+                <div class="obsidian-trust-icon">✓</div>
+                <div class="obsidian-trust-text">
+                  <span>Trusted</span>
+                  <span>Since 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="obsidian-card-desc">
+              Verifies duct tightness by detecting light penetration through ducts under negative pressure conditions.
+            </p>
+
+            <div class="obsidian-feature-row">
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-gold">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Optical Pass</span>
+                  <span class="sub">Test</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-gold">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Negative</span>
+                  <span class="sub">Pressure</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-gold">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">ISO 9001</span>
+                  <span class="sub">Compliant</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="obsidian-action-row">
+              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Light%20Testing%20services." target="_blank" class="btn-obsidian-whatsapp">
+                <div class="btn-left-content">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  <div class="btn-text-stack">
+                    <span class="top-label">WhatsApp</span>
+                    <span class="sub-label">Quick Enquiry</span>
+                  </div>
+                </div>
+                <div class="btn-arrow-circle">→</div>
               </a>
-              <button class="btn-details-accent btn-details-accent-gold open-modal-btn">
-                Proposal <span class="arrow-icon">→</span>
+
+              <button class="btn-obsidian-details border-gold open-modal-btn">
+                <div class="btn-text-stack">
+                  <span class="top-label">Proposal</span>
+                  <span class="sub-label">Request Audit</span>
+                </div>
+                <div class="btn-arrow-circle" style="background: rgba(245, 158, 11, 0.3);">→</div>
               </button>
             </div>
           </div>
         </div>
 
-        <!-- 6. Duct Painting -->
-        <div class="ref-service-card glow-card-steel">
-          <div class="ref-card-img-wrap">
-            <img src="hero-hvac.png" alt="Acoustic Duct Painting Coating" class="ref-card-img">
-            <div class="ref-card-img-scrim"></div>
-            <span class="card-status-pill pill-steel">FINISHING</span>
-            <div class="floating-circle-icon circle-steel">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-paint-roller" d="M12 19l7-7 3 3-7 7-3-3z"/><path class="icon-paint-roller" d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
-            </div>
-          </div>
-          <div class="ref-card-body">
-            <h3 class="ref-card-title">Duct Painting</h3>
-            <p class="ref-card-desc">Protective and anti-corrosive painting for ducts to enhance durability and maintain indoor air quality.</p>
+        <!-- 6. Duct Painting - Steel Theme -->
+        <div class="obsidian-card glow-obsidian-steel">
+          <div class="obsidian-card-img-wrap">
+            <img src="hero-hvac.png" alt="Acoustic Duct Painting Coating" class="obsidian-card-img">
+            <div class="obsidian-img-scrim"></div>
             
-            <div class="feature-chip-row">
-              <span class="chip-tag chip-tag-steel">✔ Anti-Corrosion</span>
-              <span class="chip-tag chip-tag-steel">✔ Industrial</span>
-              <span class="chip-tag chip-tag-steel">✔ Certified</span>
+            <div class="obsidian-status-pill pill-steel">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              FINISHING
             </div>
 
-            <div class="ref-card-action-row">
-              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Duct%20Painting%20services." target="_blank" class="btn-whatsapp-solid">
-                💬 WhatsApp
+            <button class="obsidian-bookmark-btn" aria-label="Bookmark Service">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </button>
+
+            <div class="obsidian-circle-badge badge-steel">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path class="icon-paint-roller" d="M12 19l7-7 3 3-7 7-3-3z"/><path class="icon-paint-roller" d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+            </div>
+          </div>
+
+          <div class="obsidian-card-body">
+            <div class="obsidian-title-row">
+              <div>
+                <h3 class="obsidian-card-title">Duct Painting</h3>
+                <div class="obsidian-title-bar bar-steel"></div>
+              </div>
+              <div class="obsidian-trust-badge">
+                <div class="obsidian-trust-icon">✓</div>
+                <div class="obsidian-trust-text">
+                  <span>Trusted</span>
+                  <span>Since 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="obsidian-card-desc">
+              Protective and anti-corrosive painting for ducts to enhance durability and maintain indoor air quality.
+            </p>
+
+            <div class="obsidian-feature-row">
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-steel">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Anti-Corrosive</span>
+                  <span class="sub">Coating</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-steel">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Industrial</span>
+                  <span class="sub">Finish</span>
+                </div>
+              </div>
+
+              <div class="obsidian-feature-pill">
+                <div class="obsidian-check-circle check-steel">✓</div>
+                <div class="obsidian-feature-text">
+                  <span class="title">Quality</span>
+                  <span class="sub">Assured</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="obsidian-action-row">
+              <a href="https://wa.me/917760268331?text=Hi%20Caircon%20Enterprises,%20I%20want%20to%20enquire%20about%20Duct%20Painting%20services." target="_blank" class="btn-obsidian-whatsapp">
+                <div class="btn-left-content">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  <div class="btn-text-stack">
+                    <span class="top-label">WhatsApp</span>
+                    <span class="sub-label">Quick Enquiry</span>
+                  </div>
+                </div>
+                <div class="btn-arrow-circle">→</div>
               </a>
-              <button class="btn-details-accent btn-details-accent-steel open-modal-btn">
-                Proposal <span class="arrow-icon">→</span>
+
+              <button class="btn-obsidian-details border-steel open-modal-btn">
+                <div class="btn-text-stack">
+                  <span class="top-label">Proposal</span>
+                  <span class="sub-label">Request Audit</span>
+                </div>
+                <div class="btn-arrow-circle" style="background: rgba(100, 116, 139, 0.3);">→</div>
               </button>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
