@@ -18,6 +18,10 @@ html, body {
   overflow-y: auto;
 }
 
+section[id] {
+  scroll-margin-top: 100px;
+}
+
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -333,14 +337,14 @@ html, body {
   gap: 16px;
 }
 
-/* Mobile Breakpoints (<768px) with Clean Padding & Perfect Gutters */
+/* Mobile Breakpoints (<768px) */
 @media (max-width: 768px) {
   .section-padding {
     padding: 44px 0;
   }
 
   .container {
-    padding: 0 18px;
+    padding: 0 16px;
   }
 
   .hero-100vh {
@@ -351,7 +355,7 @@ html, body {
   }
 
   .hero-content-wrapper {
-    padding: 0 18px;
+    padding: 0 16px;
   }
 
   .hero-text-block {
@@ -396,7 +400,7 @@ html, body {
 
   .services-grid-3 {
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 10px;
     width: 100%;
   }
 

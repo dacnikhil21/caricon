@@ -483,11 +483,11 @@
 }
 
 /* ==========================================================================
-   PREMIUM MOBILE APP SERVICE CARDS (APPLE WALLET / LINEAR / AIRBNB APP STYLE)
+   PREMIUM MOBILE APP SERVICE CARDS (OPTIMIZED 2-COLUMN APP LAYOUT)
    ========================================================================== */
 .service-item {
   border-radius: 18px;
-  padding: 18px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -508,10 +508,10 @@
 .service-card-image-wrap {
   position: relative;
   width: 100%;
-  height: 130px;
-  border-radius: 14px;
+  height: 120px;
+  border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .service-card-img {
@@ -538,14 +538,14 @@
 .service-card-header {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 8px;
 }
 
 .service-icon-box {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,7 +560,7 @@
 .service-item-title {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.12rem;
+  font-size: 1.05rem;
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: var(--color-primary);
@@ -569,70 +569,71 @@
 
 .service-item-desc {
   font-family: var(--font-body);
-  font-size: 0.88rem;
-  line-height: 1.45;
+  font-size: 0.85rem;
+  line-height: 1.4;
   color: var(--text-secondary);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-/* SIDE-BY-SIDE 2-BUTTON ACTION ROW (WHATSAPP + DETAILS) */
+/* SIDE-BY-SIDE 2-BUTTON ACTION ROW */
 .card-action-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
   margin-top: auto;
 }
 
 .btn-whatsapp {
   flex: 1;
-  height: 48px;
-  border-radius: 14px;
+  height: 42px;
+  border-radius: 12px;
   background: #25D366;
   border: none;
   color: #ffffff;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
-  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: transform 0.2s ease, background-color 0.2s ease;
   white-space: nowrap;
+  padding: 0 6px;
 }
 
 .btn-whatsapp:hover {
   background: #20bd5a;
   transform: scale(1.02);
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
 }
 
 .btn-details-outline {
   flex: 1;
-  height: 48px;
-  border-radius: 14px;
+  height: 42px;
+  border-radius: 12px;
   background: #ffffff;
   border: 1.5px solid #0b1e36;
   color: #0b1e36;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(11, 30, 54, 0.08);
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
   white-space: nowrap;
   cursor: pointer;
+  padding: 0 6px;
 }
 
 .btn-details-outline:hover {
@@ -646,7 +647,7 @@
 }
 
 .btn-details-outline:hover .arrow-icon {
-  transform: translateX(3px);
+  transform: translateX(2px);
 }
 
 /* CURATED COLOR THEMES */
@@ -1108,7 +1109,7 @@
   box-shadow: 0 0 0 3px rgba(217, 107, 39, 0.12);
 }
 
-/* Mobile Extensions (<768px) */
+/* Mobile Extensions (<768px) - High Density 2-Column App View */
 @media (max-width: 768px) {
   .nav-links-menu {
     display: none;
@@ -1144,32 +1145,66 @@
 
   .services-grid-3 {
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 
   .service-item {
-    padding: 14px 12px;
-    border-radius: 16px;
+    padding: 12px;
+    border-radius: 14px;
   }
 
   .service-card-image-wrap {
-    height: 95px;
+    height: 85px;
     margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .service-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .service-icon-box {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+  }
+
+  .service-icon-box svg {
+    width: 18px;
+    height: 18px;
   }
 
   .service-item-title {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
+    line-height: 1.2;
   }
 
   .service-item-desc {
-    font-size: 0.78rem;
-    margin-bottom: 12px;
+    font-size: 0.74rem;
+    line-height: 1.35;
+    margin-bottom: 10px;
+    -webkit-line-clamp: 2;
   }
 
-  .btn-whatsapp, .btn-details-outline {
-    height: 44px;
-    font-size: 0.78rem;
-    border-radius: 12px;
+  .card-action-row {
+    gap: 6px;
+  }
+
+  .btn-whatsapp {
+    height: 38px;
+    font-size: 0.72rem;
+    border-radius: 10px;
+    padding: 0 4px;
+  }
+
+  .btn-details-outline {
+    height: 38px;
+    font-size: 0.72rem;
+    border-radius: 10px;
+    padding: 0 4px;
   }
 
   .instruments-grid-mobile {
