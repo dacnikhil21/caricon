@@ -377,7 +377,7 @@
   line-height: 1.6;
 }
 
-/* HIGH-RELIABILITY SWIPER.JS CAROUSEL */
+/* SWIPER.JS CAROUSEL FOR SECTORS */
 .industries-swiper-container {
   position: relative;
   width: 100%;
@@ -482,117 +482,232 @@
   border-radius: 6px;
 }
 
-/* RICH PHOTOGRAPHIC SERVICE CARDS */
-.service-card-image-wrap {
-  width: 100%;
-  height: 140px;
-  border-radius: 12px;
+/* ==========================================================================
+   PREMIUM MOBILE APP SERVICE CARDS (APPLE WALLET / LINEAR / AIRBNB APP STYLE)
+   ========================================================================== */
+.service-item {
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 4px 16px rgba(11, 30, 54, 0.06);
+  transition: transform 350ms cubic-bezier(.22,1,.36,1), box-shadow 350ms cubic-bezier(.22,1,.36,1), border-color 350ms cubic-bezier(.22,1,.36,1);
+  position: relative;
   overflow: hidden;
-  margin-bottom: 16px;
+}
+
+.service-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px -8px rgba(11, 30, 54, 0.18);
+  border-color: var(--color-accent);
+}
+
+.service-card-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 14px;
 }
 
 .service-card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 350ms cubic-bezier(.22,1,.36,1);
 }
 
 .service-item:hover .service-card-img {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
-/* CURATED ENGINEERING COLOR PALETTE FOR SERVICE CARDS */
+.service-card-gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(11, 30, 54, 0.45) 100%);
+  pointer-events: none;
+}
+
+.service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.service-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 350ms cubic-bezier(.22,1,.36,1);
+}
+
+.service-item:hover .service-icon-box {
+  transform: rotate(5deg) scale(1.06);
+}
+
+.service-item-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.12rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.service-item-desc {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* SIDE-BY-SIDE 2-BUTTON ACTION ROW (WHATSAPP + DETAILS) */
+.card-action-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.btn-whatsapp {
+  flex: 1;
+  height: 48px;
+  border-radius: 14px;
+  background: #25D366;
+  border: none;
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-whatsapp:hover {
+  background: #20bd5a;
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
+}
+
+.btn-details-outline {
+  flex: 1;
+  height: 48px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1.5px solid #0b1e36;
+  color: #0b1e36;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(11, 30, 54, 0.08);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn-details-outline:hover {
+  background: #0b1e36;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-details-outline .arrow-icon {
+  transition: transform 0.2s ease;
+}
+
+.btn-details-outline:hover .arrow-icon {
+  transform: translateX(3px);
+}
+
+/* CURATED COLOR THEMES */
 .service-card-blue {
-  background: linear-gradient(135deg, #f0f7ff 0%, #e2effe 100%);
-  border: 1.5px solid #1e56a0;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8fe 100%);
+  border: 1.5px solid #d0e2ff;
 }
 
 .service-card-blue .service-icon-box {
-  background-color: #1e56a0;
+  background: #1e56a0;
   color: #ffffff;
 }
 
 .service-card-copper {
-  background: linear-gradient(135deg, #fff7f2 0%, #ffede0 100%);
-  border: 1.5px solid #d96b27;
+  background: linear-gradient(180deg, #ffffff 0%, #fff8f3 100%);
+  border: 1.5px solid #ffd8bf;
 }
 
 .service-card-copper .service-icon-box {
-  background-color: #d96b27;
+  background: #d96b27;
   color: #ffffff;
 }
 
 .service-card-slate {
-  background: linear-gradient(135deg, #f4f6fa 0%, #e5e9f2 100%);
-  border: 1.5px solid #0b1e36;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f6fa 100%);
+  border: 1.5px solid #cbd5e1;
 }
 
 .service-card-slate .service-icon-box {
-  background-color: #0b1e36;
+  background: #0b1e36;
   color: #ffffff;
 }
 
 .service-card-cyan {
-  background: linear-gradient(135deg, #ecfeff 0%, #cff4fc 100%);
-  border: 1.5px solid #0891b2;
+  background: linear-gradient(180deg, #ffffff 0%, #f0fdfa 100%);
+  border: 1.5px solid #99f6e4;
 }
 
 .service-card-cyan .service-icon-box {
-  background-color: #0891b2;
+  background: #0891b2;
   color: #ffffff;
 }
 
 .service-card-gold {
-  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-  border: 1.5px solid #d97706;
+  background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%);
+  border: 1.5px solid #fde68a;
 }
 
 .service-card-gold .service-icon-box {
-  background-color: #d97706;
+  background: #d97706;
   color: #ffffff;
 }
 
 .service-card-emerald {
-  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-  border: 1.5px solid #059669;
+  background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%);
+  border: 1.5px solid #a7f3d0;
 }
 
 .service-card-emerald .service-icon-box {
-  background-color: #059669;
+  background: #059669;
   color: #ffffff;
-}
-
-/* Base Service Card Layout */
-.service-item {
-  border-radius: var(--radius-md);
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  margin: 0 auto;
-}
-
-.service-item:hover {
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-  transform: translateY(-6px);
-}
-
-.service-icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
-  transition: transform var(--transition-fast);
-}
-
-.service-item:hover .service-icon-box {
-  transform: scale(1.08);
 }
 
 /* REALISTIC ICON MOTION KEYFRAMES */
@@ -1033,13 +1148,28 @@
   }
 
   .service-item {
-    padding: 16px 12px;
-    border-radius: 14px;
+    padding: 14px 12px;
+    border-radius: 16px;
   }
 
   .service-card-image-wrap {
-    height: 90px;
+    height: 95px;
     margin-bottom: 10px;
+  }
+
+  .service-item-title {
+    font-size: 0.95rem;
+  }
+
+  .service-item-desc {
+    font-size: 0.78rem;
+    margin-bottom: 12px;
+  }
+
+  .btn-whatsapp, .btn-details-outline {
+    height: 44px;
+    font-size: 0.78rem;
+    border-radius: 12px;
   }
 
   .instruments-grid-mobile {
